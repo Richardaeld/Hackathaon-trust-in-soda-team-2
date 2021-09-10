@@ -1,75 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="website helping to create wheelchair accesible interior">
-      <meta name="keywords" content="wheelchair accesibility ">
-      <!----------------------------------------------------------Please add your names here -->
-      <meta name="author" content="Fernanda Brito, Joanna Gorska, Martin Maguire">
-      <!--fav icon link-->
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-      <!--Bootstrap css-->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <!--google fonts links-->
 
-      <!--fontawsome-->
-      <script src="https://kit.fontawesome.com/ec7ce2da63.js" crossorigin="anonymous"></script>
-      <!--stylesheet-->
-      <link rel="stylesheet" href="static/assets/css/style.css">
-      <title>Spinning Wheelchairs</title>
-   </head>
-   <body>
-        <!--Nav bar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Spinning Wheelchairs</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Measures</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="website helping to create wheelchair accesible interior">
+  <meta name="keywords" content="wheelchair accesibility ">
+  <!----------------------------------------------------------Please add your names here -->
+  <meta name="author" content="Fernanda Brito, Joanna Gorska, Martin Maguire">
+  <!--fav icon link-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!--Bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--google fonts links-->
+
+  <!--fontawsome-->
+  <script src="https://kit.fontawesome.com/ec7ce2da63.js" crossorigin="anonymous"></script>
+  <!--stylesheet-->
+  <link rel="stylesheet" href="static/assets/css/style.css">
+  <title>Spinning Wheelchairs</title>
+</head>
+
+<body>
+  <!--Nav bar-->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Spinning Wheelchairs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="corridor.html">Measures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Jumbotron-->
+  <div class="container-fluid jumbotron-img">
+    <div class="p-4 p-md-5 mb-4 text-dark rounded ">
+      <div class="col-6 col-md-4 px-0">
+        <h1 class="display-4 fst-italic">Spinning Wheelchair</h1>
+        <p class="lead my-3">Make sure your corridor is accessible.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Main-->
+  <div class="container">
+
+    <div id="cent-backwheel" class="mb-3">
+      <label for="input-cent-backwheel" class="form-label">Width between chair center and back wheel</label>
+      <input type="text" class="form-control" id="cent-backwheel y" name="cent-backwheel">
+      <div id="help-cent-backwheel" class="form-text my-invisible"></div>
+    </div>
+    <div id="cent-frontwheel" class="mb-3">
+      <label for="input-cent-frontwheel" class="form-label">Width between chair center and front wheel</label>
+      <input type="text" class="form-control" id="cent-frontwheel h" name="cent-frontwheel">
+      <div id="help-cent-frontwheel" class="form-text my-invisible"></div>
+    </div>
+    <div id="front-backwheel" class="mb-3">
+      <label for="input-front-backwheel" class="form-label">Width between front and back wheel</label>
+      <input type="text" class="form-control" id="front-backwheel g" name="front-backwheel">
+      <div id="help-front-backwheel" class="form-text my-invisible"></div>
+    </div>
+    <div id="wheel-angle" class="mb-3">
+      <label for="input-wheel-angle" class="form-label">Angle of front wheel</label>
+      <input type="text" class="form-control" id="wheel-angle alpha" name="wheel-angle">
+      <div id="help-wheel-angle" class="form-text my-invisible"></div>
+    </div>
+    <div id="front-chair-cent" class="mb-3">
+      <label for="input-front-chair-cent" class="form-label">Width between front most part of chair to center back
+        wheel</label>
+      <input type="text" class="form-control" id="front-chair-cent x" name="front-chair-cent">
+      <div id="help-front-chair-cent" class="form-text my-invisible"></div>
+    </div>
+
+    <button type="button" class="btn btn-outline-success" id="submit-button1">Success</button>
+
+  </div>
+
+  <!--sticky footer-->
+  <footer class="footer py-3 bg-light fixed-bottom">
+    <div class="container text-center small">
+      Copyright 2021.
+    </div>
+  </footer>
 
 
+  <!-- our JavaScript-->
 
-        <!--Main-->
-        <div class="container">
+  <script src="static/js/turnAngle.js"></script>
 
-            <div id="wheelchair-len" class="mb-3">
-                <label for="input-wheelchair-len" class="form-label">Wheelchair Lenght</label>
-                <input type="text" class="form-control" id="wheelchair-len" name="wheelchair-len">
-                <div id="help-wheelchair-len" class="form-text my-invisible"></div>
-            </div>
+  <!--Bootstrap JavaScript-->
 
-        </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
 
-
-
-
-
-         <!--sticky footer-->
-
-
-         <!-- our JavaScript-->
-
-         <script src="static/js/turnAngle.js"></script>
-
-         <!--Bootstrap JavaScript-->
-
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
 </html>
