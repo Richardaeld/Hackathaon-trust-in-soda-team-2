@@ -49,11 +49,11 @@
   </nav>
 
   <!--Jumbotron-->
-  <div class="container-fluid">
-    <div class="p-4 p-md-5 mb-4 text-dark rounded">
-      <div class="col-md-6 px-0">
-        <h1 class="display-4 fst-italic">Spinning Whellchair</h1>
-        <p class="lead my-3">Make sure your corridor is wheelchair accessible.</p>
+  <div class="container-fluid jumbotron-img">
+    <div class="p-4 p-md-5 mb-4 text-dark rounded ">
+      <div class="col-6 col-md-4 px-0">
+        <h1 class="display-4 fst-italic">Spinning Wheelchair</h1>
+        <p class="lead my-3">Make sure your corridor is accessible.</p>
       </div>
     </div>
   </div>
@@ -61,32 +61,34 @@
   <!--Main-->
   <div class="container">
 
-    <div id="wheelchair-len" class="mb-3">
-      <label for="input-wheelchair-len" class="form-label">Width between chair center and back wheel</label>
-      <input type="text" class="form-control" id="wheelchair-len" name="wheelchair-len">
-      <div id="help-wheelchair-len" class="form-text my-invisible"></div>
+    <div id="cent-backwheel" class="mb-3">
+      <label for="input-cent-backwheel" class="form-label">Width between chair center and back wheel</label>
+      <input type="text" class="form-control" id="cent-backwheel y" name="cent-backwheel">
+      <div id="help-cent-backwheel" class="form-text my-invisible"></div>
     </div>
-    <div id="wheelchair-len" class="mb-3">
-      <label for="input-wheelchair-len" class="form-label">Width between chair center and front wheel</label>
-      <input type="text" class="form-control" id="wheelchair-len" name="wheelchair-len">
-      <div id="help-wheelchair-len" class="form-text my-invisible"></div>
+    <div id="cent-frontwheel" class="mb-3">
+      <label for="input-cent-frontwheel" class="form-label">Width between chair center and front wheel</label>
+      <input type="text" class="form-control" id="cent-frontwheel h" name="cent-frontwheel">
+      <div id="help-cent-frontwheel" class="form-text my-invisible"></div>
     </div>
-    <div id="wheelchair-len" class="mb-3">
-      <label for="input-wheelchair-len" class="form-label">Width between front and back wheel</label>
-      <input type="text" class="form-control" id="wheelchair-len" name="wheelchair-len">
-      <div id="help-wheelchair-len" class="form-text my-invisible"></div>
+    <div id="front-backwheel" class="mb-3">
+      <label for="input-front-backwheel" class="form-label">Width between front and back wheel</label>
+      <input type="text" class="form-control" id="front-backwheel g" name="front-backwheel">
+      <div id="help-front-backwheel" class="form-text my-invisible"></div>
     </div>
-    <div id="wheelchair-len" class="mb-3">
-      <label for="input-wheelchair-len" class="form-label">Angle of front wheel</label>
-      <input type="text" class="form-control" id="wheelchair-len" name="wheelchair-len">
-      <div id="help-wheelchair-len" class="form-text my-invisible"></div>
+    <div id="wheel-angle" class="mb-3">
+      <label for="input-wheel-angle" class="form-label">Angle of front wheel</label>
+      <input type="text" class="form-control" id="wheel-angle alpha" name="wheel-angle">
+      <div id="help-wheel-angle" class="form-text my-invisible"></div>
     </div>
-    <div id="wheelchair-len" class="mb-3">
-      <label for="input-wheelchair-len" class="form-label">Width between front most part of chair to center back wheel</label>
-      <input type="text" class="form-control" id="wheelchair-len" name="wheelchair-len">
-      <div id="help-wheelchair-len" class="form-text my-invisible"></div>
+    <div id="front-chair-cent" class="mb-3">
+      <label for="input-front-chair-cent" class="form-label">Width between front most part of chair to center back
+        wheel</label>
+      <input type="text" class="form-control" id="front-chair-cent x" name="front-chair-cent">
+      <div id="help-front-chair-cent" class="form-text my-invisible"></div>
     </div>
-    
+
+    <button type="button" class="btn btn-outline-success" id="submit-button1">Success</button>
 
   </div>
 
