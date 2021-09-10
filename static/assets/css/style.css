@@ -2,3 +2,14 @@
     visibility: hidden;
     position: absolute;
   }
+  /* media queries added to reduce the size of the log when on smaller screen */
+  @media screen and (max-width:600px){
+    img.responsive {width: 394px;}
+  }
+  @media screen and (max-width:496px){
+    img.responsive {width: 294px;}
+  }
+  @media screen and (max-width:416px){
+    img.responsive {width: 215px;}
+  }
+  
