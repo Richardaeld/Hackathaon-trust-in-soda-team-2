@@ -94,26 +94,28 @@ function validateInputField(inputField, helpDiv, ) {
 
 
 
+// variables needed for all validation results function and for validation on input
+
+var inputWidthBackAxis = document.getElementById("input-width-back-axis")
+var helpWidthBackAxis = document.getElementById("help-width-back-axis")
+
+var inputWidthFrontAxis = document.getElementById("input-width-front-axis")
+var helpWidthFrontAxis = document.getElementById("help-width-front-axis")
+
+var inputBetweenFrontAndBackAxis = document.getElementById("input-between-front-and-back-axis")
+var helpBetweenFrontAndBackAxis = document.getElementById("help-between-front-and-back-axis")
+
+var inputBackAxisToFootrest = document.getElementById("input-back-axis-to-footrest")
+var helpBackAxisToFootrest = document.getElementById("help-back-axis-to-footrest")
+
+var inputTurnDegreeFront = document.getElementById("input-turn-degree-front")
+var helpTurnDegreeFront = document.getElementById("help-turn-degree-front")
+
 /**
  * Function to check if each validation result, for each input field is false
 */
 
 function allValidationResults() {
-    let inputWidthBackAxis = document.getElementById("input-width-back-axis")
-    let helpWidthBackAxis = document.getElementById("help-width-back-axis")
-
-    let inputWidthFrontAxis = document.getElementById("input-width-front-axis")
-    let helpWidthFrontAxis = document.getElementById("help-width-front-axis")
-
-    let inputBetweenFrontAndBackAxis = document.getElementById("input-between-front-and-back-axis")
-    let helpBetweenFrontAndBackAxis = document.getElementById("help-between-front-and-back-axis")
-
-    let inputBackAxisToFootrest = document.getElementById("input-back-axis-to-footrest")
-    let helpBackAxisToFootrest = document.getElementById("help-back-axis-to-footrest")
-
-    let inputTurnDegreeFront = document.getElementById("input-turn-degree-front")
-    let helpTurnDegreeFront = document.getElementById("help-turn-degree-front")
-    
 
     if (validateInputField(inputWidthBackAxis, helpWidthBackAxis) == false) {
       console.log("input-width-back-axis failed all validation results");
@@ -144,20 +146,20 @@ function allValidationResults() {
 
 //event listener for "submit"
 var wheelchairForm = document.getElementsByTagName("FORM")[0];
-wheelchairForm.addEventListener("submit", handleCalculatorSubmit);
+wheelchairForm.addEventListener("submit", handleFormSubmit);
 
 /**
  * Main function to handle submit event
  */
 
- function handleCalculatorSubmit(event) {
+ function handleFormSubmit(event) {
   event.preventDefault();
   if (allValidationResults() == false) {
-      console.log("stay on the page calculator form");
+      console.log("stay on index page");
 
   } else {
       console.log("all good to go");
-      calulatorForm.submit();
+      wheelchairForm.submit();
   }
 
 }
@@ -183,11 +185,11 @@ wheelchairForm.addEventListener("submit", handleCalculatorSubmit);
     };
   };
 
-  /**
+/**
 * Gives instant feedback on input with the delay set above
 */
 
-calulatorForm.addEventListener ('input', debounce(function (e) {
+wheelchairForm.addEventListener ('input', debounce(function (e) {
     switch (e.target.id) {
         case 'input-width-back-axis':
             validateInputField(inputWidthBackAxis, helpWidthBackAxis);
