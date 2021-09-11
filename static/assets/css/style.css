@@ -1,15 +1,33 @@
+body{
+  margin-bottom: 30px;
+ }
+ 
+ /*---------------------------------------- Form  ------------------*/
  .my-invisible {
    visibility: hidden;
    position: absolute;
  }
 
+
+ /*---------------------------------------- Navbar ----------------*/
+ .logo {
+   max-height: 70px;
+ }
+
+ /*---------------------------------------- Jumbotron -------------*/
  .jumbotron-img {
    background-image: url("../images/wheelchair-jumbotron.png");
    background-position: bottom;
    background-size: cover;
-   min-height: 4vh;
+   min-height: 300px;
  }
 
+ .jumbotron-text {
+   margin: 15% auto;
+ }
+
+
+ /*---------------------------------------- Contact Page --------*/
  #contacts {
    text-align: center;
    padding-top: 5%;
@@ -21,6 +39,12 @@
    color: black;
  }
 
+ /*---------------------------------------- Footer --------*/
+ footer{
+  font-size:small;
+  height:fit-content;
+}
+
 
  /* media queries added to reduce the size of the log when on smaller screen */
  @media screen and (max-width:700px) {
@@ -31,6 +55,7 @@
    .jumbotron-img {
      background-size: cover;
      background-repeat: no-repeat;
+     min-height: 15vh;
    }
 
    .jumbotron-img h1 {
@@ -40,10 +65,18 @@
 
    .jumbotron-img p {
      font-size: inherit;
-
    }
 
-   @media screen and (max-width:496px) {
+   .jumbotron-text {
+     margin: 0 auto;
+   }
+
+   .form-container{
+    font-size: 0.8em;
+    margin:10px;
+   }
+
+    @media screen and (max-width:496px) {
      img.responsive {
        width: 294px;
      }
