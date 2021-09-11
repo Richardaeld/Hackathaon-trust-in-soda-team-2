@@ -59,7 +59,7 @@ document.getElementById("submit-button").addEventListener("click", function() {
 // g = distance between front and back center of wheels
 // alpha = angle of front wheel turn
 // x = distance between front most part and back wheels(fixed wheels)
-let TD = 0;
+var TD = 0;
 document.getElementById("submit-button1").addEventListener("click", function() {
 
     y = document.getElementById("y").value;
@@ -68,12 +68,41 @@ document.getElementById("submit-button1").addEventListener("click", function() {
     alpha = document.getElementById("alpha").value;
     x = document.getElementById("x").value;
 
+    y = parseFloat(y)
+    h = parseFloat(h)
+    g = parseFloat(g)
+    alpha = parseFloat(alpha)
+    x = parseFloat(x)
+
 
     TD = 2 * (Math.sqrt((y + h + ( g / (Math.tan(alpha)) ))**2  + x**2))
 
     //  method 3 - used for consolelog testing
     // console.log(TD = 2 * (Math.sqrt((.240 + .191 + ( .425 / (Math.tan(45)) ))**2  + .840**2)))
 
-    document.getElementsByClassName("output4")[0].textContent = TD
+    // Half of the thickness of the back wheel
+    let halfWheelThickness = 3.81
+    // 6 inches, converted into cm for side padding
+    let comfortPadding = 18.288
+    // Finds minimum width of hallway
+    let minHallway = y + TD/2 + halfWheelThickness + comfortPadding;
+
+    // Console.logs: diameter of turn circle, radius, and minimum width of hallway
+    console.log("diameter " + TD)
+    console.log("Radius " + TD/2)
+    console.log("Minimum sized hallway " + minHallway)
+
+    // Outputs information: diameter of turn circle, radius, and minimum width of hallway
+    document.getElementsByClassName("output1")[0].textContent = "diameter " + TD.toFixed(1) + "cm";
+    document.getElementsByClassName("output2")[0].textContent = "Radius " + (TD/2).toFixed(1) + "cm";
+    document.getElementsByClassName("output3")[0].textContent = "Minimum sized hallway " + minHallway.toFixed(1) + "cm";
+
+    // document.getElementsByClassName("output4")[0].textContent = TD
 
 });
+
+// Assumptions:
+// Output will be same units input. This will be predefined to the user to be cm
+// Wheel chair starts turn in center of door way
+// Ideal turn angle is instantly achieved
+// Wheel chair will be able to make a single turn into hallway without having to backup
