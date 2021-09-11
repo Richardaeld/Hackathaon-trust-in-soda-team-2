@@ -161,3 +161,48 @@ wheelchairForm.addEventListener("submit", handleCalculatorSubmit);
   }
 
 }
+
+// debounce and instant feedback on input copied from the below link
+//https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/
+
+/**
+ * Function to delay response
+ */
+
+ const debounce = (fn, delay = 500) => {
+    let timeoutId;
+    return (...args) => {
+        // cancel the previous timer
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+        }
+        // setup a new timer
+        timeoutId = setTimeout(() => {
+            fn.apply(null, args);
+        }, delay);
+    };
+  };
+
+  /**
+* Gives instant feedback on input with the delay set above
+*/
+
+calulatorForm.addEventListener ('input', debounce(function (e) {
+    switch (e.target.id) {
+        case 'input-width-back-axis':
+            validateInputField(inputWidthBackAxis, helpWidthBackAxis);
+            break;
+        case 'input-width-front-axis':
+            validateInputField(inputWidthFrontAxis, helpWidthFrontAxis);
+                break;
+        case 'input-between-front-and-back-axis':
+            validateInputField(inputBetweenFrontAndBackAxis, helpBetweenFrontAndBackAxis);
+                break;
+        case 'input-back-axis-to-footrest':
+            validateInputField(inputBackAxisToFootrest, helpBackAxisToFootrest);
+                break;
+        case 'input-turn-degree-front':
+            validateInputField(inputTurnDegreeFront, helpTurnDegreeFront);
+                break;
+    }
+}));
