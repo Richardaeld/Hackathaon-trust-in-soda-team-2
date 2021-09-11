@@ -49,17 +49,27 @@
   </nav>
 
   <!--Jumbotron-->
+
   <div class="container-fluid">
-    <div class="p-4 p-md-5 mb-4 text-dark rounded">
-      <div class="col-md-6 px-0">
-        <h1 class="display-4 fst-italic">Spinning Whellchair</h1>
-        <p class="lead my-3">Make sure your corridor is wheelchair accessible.</p>
+    <div class="row">
+    <div class="p-4 mb-4 text-dark rounded">
+      <div class="px-0">
+        <h1 class="display-4 fst-italic">Spinning Whellchairs</h1>
+        <p class="lead my-3">We help you to make the corridor is wheelchair accessible.</p>
       </div>
     </div>
   </div>
+  </div>
+
 
   <!--Main-->
+
+  <!--
+  submitting form is opening new page results.html with data in the URL
+  data can be obtained in a form of json string
+  -->
   <form action="results.html" method="GET" target="_blank">
+
     <div class="container">
 
       <div id="wheelchair-len" class="mb-3">
@@ -90,9 +100,25 @@
       </div>
       
 
+
+        <!--Buttons at the end of the page-->
+        <div class="container-fluid text-center mt-5 mb-5">
+            <div class="row">
+              <div class="col p-3">
+                      <button type="submit" class="btn btn-outline-success">Submit</button>
+              </div>
+              <div class="col p-3">
+                  <button type="reset" class="btn btn-outline-danger">Reset</button>
+              </div> 
+            </div>
+        </div>
+
+      </div>
+
     </div>
+
   </form>
-  
+
   <!--sticky footer-->
   <footer class="footer py-3 bg-light fixed-bottom">
     <div class="container text-center small">
