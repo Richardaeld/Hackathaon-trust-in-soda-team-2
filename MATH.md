@@ -55,14 +55,14 @@ TD = 2 * $\sqrt{y + h + (g/sin(\alpha))^2 + x^2}$
 + This gives information to check if a hallway is wide enough for a wheel chair to do a 180deg turn
 
 STANDARD MANUAL WHEELCHAIR 
-• Total width: 64 cm
-• Folded wheelchair width: 24 cm
-• Seat width: 46 cm
-• Rear wheel diameter: 58 cm
-• Front wheel diameter: 20 cm
-• Seat height: 49 cm
-• Total wheelchair height: 87 cm
-• Total length: 106 cm
-• Seat depth: 40 cm
-• Seat height: 45 cm
++ Total width: 64 cm
++ Folded wheelchair width: 24 cm
++ Seat width: 46 cm
++ Rear wheel diameter: 58 cm
++ Front wheel diameter: 20 cm
++ Seat height: 49 cm
++ Total wheelchair height: 87 cm
++ Total length: 106 cm
++ Seat depth: 40 cm
++ Seat height: 45 cm
 

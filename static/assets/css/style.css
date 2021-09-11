@@ -1,15 +1,44 @@
 .my-invisible {
-    visibility: hidden;
-    position: absolute;
+  visibility: hidden;
+  position: absolute;
+}
+
+.jumbotron-img {
+  background-image: url("../images/wheelchair-jumbotron.png");
+  background-position: bottom;
+  background-size: cover;
+  min-height: 4vh;
+}
+
+/* media queries added to reduce the size of the log when on smaller screen */
+@media screen and (max-width:700px) {
+  img.responsive {
+    width: 394px;
   }
-  /* media queries added to reduce the size of the log when on smaller screen */
-  @media screen and (max-width:600px){
-    img.responsive {width: 394px;}
+
+  .jumbotron-img {
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  @media screen and (max-width:496px){
-    img.responsive {width: 294px;}
+
+  .jumbotron-img h1 {
+    font-size: 1.6em;
+    font-weight: normal;
   }
-  @media screen and (max-width:416px){
-    img.responsive {width: 215px;}
+
+  .jumbotron-img p {
+    font-size: inherit;
+    
   }
-  
+
+  @media screen and (max-width:496px) {
+    img.responsive {
+      width: 294px;
+    }
+  }
+
+  @media screen and (max-width:416px) {
+    img.responsive {
+      width: 215px;
+    }
+  }
