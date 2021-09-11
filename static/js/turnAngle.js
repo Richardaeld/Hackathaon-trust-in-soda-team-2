@@ -14,6 +14,11 @@
 // Calculates when submit button is clicked
 // Chould change, "click" to "change" to allow auto updates for when numbers are being input
 // Or double up on events to allow for both events to trigger outputs
+
+
+
+
+
 document.getElementById("submit-button").addEventListener("click", function() {
     let b = document.getElementById("wheel_width_FB").value;
     let a = document.getElementById("wheel_width_FF").value;
