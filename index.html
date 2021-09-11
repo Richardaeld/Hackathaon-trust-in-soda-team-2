@@ -27,7 +27,7 @@
   <!--Nav bar-->
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="static/assets/logo/spinning_Wheelchairs.png" alt="Spinning Wheelchairs" class="responsive">
+      <a class="navbar-brand" href="index.html"><img src="static/assets/logo/spinning_Wheelchairs.png" alt="Spinning Wheelchairs" class="responsive"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,15 +50,13 @@
 
   <!--Jumbotron-->
 
-  <div class="container-fluid">
-    <div class="row">
-    <div class="p-4 mb-4 text-dark rounded">
-      <div class="px-0">
-        <h1 class="display-4 fst-italic">Spinning Whellchairs</h1>
-        <p class="lead my-3">We help you to make the corridor is wheelchair accessible.</p>
+  <div class="container-fluid jumbotron-img">
+    <div class="p-1 col-6  text-dark rounded text-dark rounded">
+      <div class="col-md-9 px-0 ">
+        <h1 class="display-4 fst-italic">Spinning Whellchair</h1>
+        <p class="lead my-3 col-11">Make sure your corridor is accessible.</p>
       </div>
     </div>
-  </div>
   </div>
 
 
@@ -72,11 +70,18 @@
 
     <div class="container">
 
-      <div id="wheelchair-len" class="mb-3">
-        <label for="input-wheelchair-len" class="form-label">Width between chair center and back wheel</label>
-        <input type="text" class="form-control" id="wheelchair-len" name="wheelchair-len">
-        <div id="help-wheelchair-len" class="form-text my-invisible"></div>
+      <div id="div-center-to-back-wheel" class="mb-3">
+        <label for="input-center-to-back-wheel" class="form-label">Distance between centre of the wheelchair to the axis of back wheel</label>
+        <input type="text" class="form-control" id="input-center-to-back-wheel" name="center-to-back-wheel">
+        <div id="help-center-to-back-wheel" class="form-text my-invisible"></div>
       </div>
+
+      <div id="div-center-to-back-wheel" class="mb-3">
+        <label for="input-center-to-back-wheel" class="form-label">Distance between centre of the wheelchair to the axis of front wheell</label>
+        <input type="text" class="form-control" id="input-center-to-back-wheel" name="center-to-back-wheel">
+        <div id="help-center-to-back-wheel" class="form-text my-invisible"></div>
+      </div>
+
 
       <div id="wheelchair-len" class="mb-3">
         <label for="input-wheelchair-len" class="form-label">Width between chair center and front wheel</label>
