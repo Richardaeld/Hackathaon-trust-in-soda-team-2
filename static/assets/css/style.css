@@ -1,89 +1,89 @@
 .background-img-fixed {
   background:
-  #f0f5fa
-  url('../images/wheelchair-jumbotron.png')
-  top/cover
-  no-repeat
-  fixed;
+    #f0f5fa url('../images/wheelchair-jumbotron.png') top/cover no-repeat fixed;
 }
 
 .my-white-gradient {
   background: linear-gradient(to left, rgba(255, 255, 255, 0.726), rgb(255, 255, 255));
 }
 
-body{
+body {
   margin-bottom: 100px;
- }
- 
- /*---------------------------------------- Form  ------------------*/
- .my-invisible {
-   visibility: hidden;
-   position: absolute;
- }
-
-
- /*---------------------------------------- Navbar ----------------*/
- .logo {
-   max-height: 70px;
- }
-
- /*---------------------------------------- Jumbotron -------------*/
- .jumbotron-img {
-   background-image: url("../images/wheelchair-jumbotron.png");
-   background-position: bottom;
-   background-size: cover;
-   min-height: 300px;
- }
-
- .jumbotron-text {
-   margin: 0 auto;
- }
-
-
-
- /*---------------------------------------- Contact Page --------*/
- #contacts {
-   text-align: center;
-   padding-top: 5%;
-   padding-bottom: 5%;
- }
-
- .p-2 a {
-   padding: 5px;
-   color: black;
- }
-
- /*---------------------------------------- Footer --------*/
- footer{
-  font-size:small;
-  height:fit-content;
 }
 
- /*---------------------------------------- Results --------*/
- .return-label-card {
+/*---------------------------------------- Form  ------------------*/
+.my-invisible {
+  visibility: hidden;
+  position: absolute;
+}
+
+
+/*---------------------------------------- Navbar ----------------*/
+.logo {
+  max-height: 70px;
+}
+
+/*---------------------------------------- Jumbotron -------------*/
+.jumbotron-img {
+  background-image: url("../images/wheelchair-jumbotron.png");
+  background-position: bottom;
+  background-size: cover;
+  min-height: 300px;
+}
+
+.jumbotron-text {
+  margin: 0 auto;
+}
+
+
+
+/*---------------------------------------- Contact Page --------*/
+#contacts {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.p-2 a {
+  padding: 5px;
+  color: black;
+}
+
+/*---------------------------------------- Footer --------*/
+footer {
+  font-size: small;
+  height: fit-content;
+}
+
+.width-github {
+  width: 75%;
+}
+
+/*---------------------------------------- Results --------*/
+.return-label-card {
   font-family: Arial, Helvetica, sans-serif;
-  border-radius: 10px; 
+  border-radius: 10px;
   background-color: #BABAE6;
-  box-shadow: inset 2px 2px 0px  rgba(0, 0, 0, .25),
-              3px 3px 4px  rgba(0, 0, 0, .25),
-              inset -3px -3px 3px  rgba(0, 0, 0, .55);
+  box-shadow: inset 2px 2px 0px rgba(0, 0, 0, .25),
+    3px 3px 4px rgba(0, 0, 0, .25),
+    inset -3px -3px 3px rgba(0, 0, 0, .55);
 }
 
- .results-header {
-   position: relative;
-   text-align: center;
-   color: #faf9f6;
-   text-shadow: 1px 0px #333,
-                -1px 0px #333,
-                0px 1px #333,
-                0px -1px #333,
-                3px 2px #333;
- }
+.results-header {
+  position: relative;
+  text-align: center;
+  color: #faf9f6;
+  text-shadow: 1px 0px #333,
+    -1px 0px #333,
+    0px 1px #333,
+    0px -1px #333,
+    3px 2px #333;
+}
 
- .results-buffer {
-   height: 3em;
- }
- 
+.results-buffer {
+  height: 3em;
+}
+
 .results-value {
   position: relative;
   text-align: center;
@@ -91,18 +91,18 @@ body{
   letter-spacing: 1px;
   color: transparent;
   text-shadow: -2px -2px 0px #faf9f6,
-               -3px -3px 1px #3f3f3f4d,
-                0px 0px 1px rgba(0, 0, 0, .75);
+    -3px -3px 1px #3f3f3f4d,
+    0px 0px 1px rgba(0, 0, 0, .75);
 }
 
 .results-value p,
 .results-value span {
-  display:inline;
+  display: inline;
 }
 
 .vertical-border {
   position: absolute;
-  height:100%;
+  height: 100%;
   width: 1px;
   border-left: 2px solid #333;
 }
@@ -113,51 +113,61 @@ body{
   /* text-shadow: 1px 1px 0px #a7a7a7; */
 }
 
- /* media queries added to reduce the size of the log when on smaller screen */
- @media screen and (max-width:700px) {
-   img.responsive {
-     width: 394px;
-   }
-
-   .jumbotron-img {
-     background-size: cover;
-     background-repeat: no-repeat;
-     min-height: 15vh;
-   }
-
-   .jumbotron-img h1 {
-     font-size: 1.6em;
-     font-weight: normal;
-   }
-
-   .jumbotron-img p {
-     font-size: inherit;
-   }
-
-   .jumbotron-text {
-     margin: 0 auto;
-   }
-
-   .form-container{
-    font-size: 0.8em;
-    margin:10px;
-   }
-
-   .width{
-    width:90%;
-    margin:0 auto;
+/* media queries added to reduce the size of the log when on smaller screen */
+@media screen and (max-width:700px) {
+  img.responsive {
+    width: 394px;
   }
 
-    @media screen and (max-width:496px) {
-     img.responsive {
-       width: 294px;
-     }
-   }
+  .jumbotron-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 15vh;
+  }
 
-   @media screen and (max-width:416px) {
-     img.responsive {
-       width: 215px;
-     }
-   }
+  .jumbotron-img h1 {
+    font-size: 1.6em;
+    font-weight: normal;
+  }
 
- }
+  .jumbotron-img p {
+    font-size: inherit;
+  }
+
+  .jumbotron-text {
+    margin: 0 auto;
+  }
+
+  .form-container {
+    font-size: 0.8em;
+    margin: 10px;
+  }
+
+  .width {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+
+  @media screen and (max-width:496px) {
+    img.responsive {
+      width: 294px;
+    }
+  }
+
+  @media screen and (max-width:416px) {
+    img.responsive {
+      width: 215px;
+    }
+
+
+    @media screen and (max-width:330px) {
+
+      .width-github {
+        width: 90%;
+      }
+    }
+
+  }
+}
