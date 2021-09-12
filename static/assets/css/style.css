@@ -60,57 +60,44 @@ footer {
 }
 
 /*---------------------------------------- Results --------*/
-.return-label-card {
+.container-shadow {
+  box-shadow: inset 2px 2px 0px  rgba(0, 0, 0, .25),
+              3px 3px 4px  rgba(0, 0, 0, .25),
+              inset -3px -3px 3px  rgba(0, 0, 0, .55);
+ }
+ .return-label-card {
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
-  background-color: #BABAE6;
-  box-shadow: inset 2px 2px 0px rgba(0, 0, 0, .25),
-    3px 3px 4px rgba(0, 0, 0, .25),
-    inset -3px -3px 3px rgba(0, 0, 0, .55);
+  background-color: #d8d8d8; 
 }
 
-.results-header {
+ .results-header {
+  text-shadow: 1px 1px 1px #474747;
+ }
+
+ .results-buffer {
+   height: 3em;
+ }
+
+.results-hr {
   position: relative;
-  text-align: center;
-  color: #faf9f6;
-  text-shadow: 1px 0px #333,
-    -1px 0px #333,
-    0px 1px #333,
-    0px -1px #333,
-    3px 2px #333;
-}
-
-.results-buffer {
-  height: 3em;
+  left: 37.5%;
+  transform: translateY(-37.5%);
+  width:25%;
+  border-bottom: 2px solid #333;
 }
 
 .results-value {
-  position: relative;
-  text-align: center;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: transparent;
-  text-shadow: -2px -2px 0px #faf9f6,
-    -3px -3px 1px #3f3f3f4d,
-    0px 0px 1px rgba(0, 0, 0, .75);
-}
-
-.results-value p,
-.results-value span {
-  display: inline;
-}
-
-.vertical-border {
-  position: absolute;
-  height: 100%;
-  width: 1px;
-  border-left: 2px solid #333;
-}
-
-.results-explain {
   text-align: center;
   font-weight: bold;
-  /* text-shadow: 1px 1px 0px #a7a7a7; */
+  letter-spacing: 1px;
+  color: #333;
+  width:100%;
+  }
+
+.results-explain {
+  /* text-shadow: 1px 1px 1px #474747; */
+  /* font-weight: bold; */
 }
 
 /* media queries added to reduce the size of the log when on smaller screen */
