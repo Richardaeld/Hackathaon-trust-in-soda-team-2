@@ -1,6 +1,7 @@
 .background-img-fixed {
   background:
     #f0f5fa url('../images/wheelchair-jumbotron.png') top/cover no-repeat fixed;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .my-white-gradient {
@@ -96,10 +97,10 @@ footer {
   width: 100%;
 }
 
-.results-explain {
-  /* text-shadow: 1px 1px 1px #474747; */
-  /* font-weight: bold; */
-}
+.results-assumpt li {
+  background-color: #d8d8d8!important;
+  border: none;
+ }
 
 /* media queries added to reduce the size of the log when on smaller screen */
 @media screen and (max-width:700px) {
