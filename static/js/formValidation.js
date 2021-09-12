@@ -29,6 +29,19 @@
     targetNode.removeAttribute(atributeName, atributeValue);
   }
   
+//Regex testing if the input field contains letters and a few chosen characters 
+
+const regexLetters = /[a-zA-Z \,'\.\-\']/g;
+
+/**
+ *  Function testing if name input field contains letters and chosen special characters
+ *  function testing if particular field is in line with Regex
+ */
+
+function containsLetters(inputField) {
+  let valueLetters = inputField.value;
+  return regexLetters.test(valueLetters);
+}
   /**
    * Function to display Error after validation has been failed
    * makes div with help message visible and in red, input's border is red and red icon with exclamation mark is displayed in input field
@@ -60,9 +73,9 @@
 
 function validateInputField(inputField, helpDiv) {
 
-    if (inputField.value == 0) {
-  
-      helpDiv.innerHTML = "This field is required";
+    if (containsLetters(inputField)) {
+      
+      helpDiv.innerHTML = "Please put numbers in this field";
       displayErrorValidation(inputField, helpDiv);
       return(false);
   
@@ -80,8 +93,9 @@ function validateInputField(inputField, helpDiv) {
       return(false);
 
 
-    } else if (isNaN(inputField)) {
-      helpDiv.innerHTML = "Please put numbers in this field";
+    } else if (inputField.value == 0) {
+      
+      helpDiv.innerHTML = "This field is required";
       displayErrorValidation(inputField, helpDiv);
       return(false);
     
