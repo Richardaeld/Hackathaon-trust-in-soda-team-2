@@ -48,30 +48,75 @@
     </div>
   </nav>
 
+  <!-- Results output -->
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 results-buffer"></div>
+      <div class=" col-10 col-md-8 return-label-card">
+        <div class="row justify-content-center">
+          <h2 class="results-header mt-2 mb-2">Results</h2>
+          <hr>
 
+          <div>
+            <p class="results-explain mb-2">This is the minimum circle diameter required for this wheel chair to do a 360 degree turn.</p>
+          </div>
+          <div class="results-value">
+            <p id="diameter" class=""></p>
+          </div>
+          <hr>
 
-  <!--Main-->
+          <div>
+            <p class="results-explain mb-2">This is the minimum distance required for this wheel chair to do a 90 degree turn.</p>
+          </div>
+          <div class="results-value mt-2 mb-0">
+            <p id="radius"></p>
+          </div>
+          <hr>
 
+          <div>
+            <p class="results-explain mb-2">This is the minimum comfortable width of a hallway for this wheel chair to do a turn into from a doorway.</p>
+          </div>
+          <div class="results-value mt-2">
+            <p id="hallway"></p>
+          </div>
+          <hr>
 
+          <div>
+            <p class="results-explain mb-2">This is the minimum confortable width of a door frame for this wheel chair to pass through.</p>
+          </div>
+          <div class="results-value mt-2">
+            <p id="doorway"></p>
+          </div>
+          <!-- <hr>
 
+          <div>
+            <p class="results-explain mb-2">This is the minimum room for a three point turn.</p>
+          </div>
+          <div class="results-value mt-2">
+            <p id="ThreePointTurn"></p>
+          </div> -->
 
-
-
-
-
-
+        </div>
+      </div>
   
+      <div class="col-10 mt-5">
+        <p class="results-explain mb-2 text-start"><i>Assumptions</i></p>
+        <ul>
+          <li>The wheel chair starts its turn with its back axis in the center of the door frame.</li>
+          <li>Ideal turn angle is instantly achieved and does not change for entire turn.</li>
+          <li>Wheel chair is trying to make a single turn into the hallway without having to backup.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-    <!-- our JavaScript-->
-
-    <script src="static/js/results.js"></script>
-
+  <!-- our JavaScript-->
+  <script src="static/js/results.js"></script>
   
-    <!--Bootstrap JavaScript-->
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+  <!--Bootstrap JavaScript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
   </body>
   
   </html>
