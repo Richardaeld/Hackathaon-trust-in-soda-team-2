@@ -12,7 +12,7 @@
 }
 
 body{
-  margin-bottom: 30px;
+  margin-bottom: 100px;
  }
  
  /*---------------------------------------- Form  ------------------*/
@@ -36,8 +36,9 @@ body{
  }
 
  .jumbotron-text {
-   margin: 15% auto;
+   margin: 0 auto;
  }
+
 
 
  /*---------------------------------------- Contact Page --------*/
@@ -141,6 +142,11 @@ body{
     font-size: 0.8em;
     margin:10px;
    }
+
+   .width{
+    width:90%;
+    margin:0 auto;
+  }
 
     @media screen and (max-width:496px) {
      img.responsive {
