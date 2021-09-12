@@ -3,20 +3,20 @@
 
 // variables needed for all validation results function and for validation on input
 
-var inputWidthBackAxis = document.getElementById("input-width-back-axis")
-var helpWidthBackAxis = document.getElementById("help-width-back-axis")
+var inputWidthBackAxis = document.getElementById("input-width-back-axis");
+var helpWidthBackAxis = document.getElementById("help-width-back-axis");
 
-var inputWidthFrontAxis = document.getElementById("input-width-front-axis")
-var helpWidthFrontAxis = document.getElementById("help-width-front-axis")
+var inputWidthFrontAxis = document.getElementById("input-width-front-axis");
+var helpWidthFrontAxis = document.getElementById("help-width-front-axis");
 
-var inputBetweenFrontAndBackAxis = document.getElementById("input-between-front-and-back-axis")
-var helpBetweenFrontAndBackAxis = document.getElementById("help-between-front-and-back-axis")
+var inputBetweenFrontAndBackAxis = document.getElementById("input-between-front-and-back-axis");
+var helpBetweenFrontAndBackAxis = document.getElementById("help-between-front-and-back-axis");
 
-var inputBackAxisToFootrest = document.getElementById("input-back-axis-to-footrest")
-var helpBackAxisToFootrest = document.getElementById("help-back-axis-to-footrest")
+var inputBackAxisToFootrest = document.getElementById("input-back-axis-to-footrest");
+var helpBackAxisToFootrest = document.getElementById("help-back-axis-to-footrest");
 
-var inputTurnDegreeFront = document.getElementById("input-turn-degree-front")
-var helpTurnDegreeFront = document.getElementById("help-turn-degree-front")
+var inputTurnDegreeFront = document.getElementById("input-turn-degree-front");
+var helpTurnDegreeFront = document.getElementById("help-turn-degree-front");
 
 /**
  * Function to add class
@@ -119,7 +119,7 @@ function validateInputField(inputField, helpDiv) {
 
     } else if (parseInt(inputTurnDegreeFront.value) > 90) {
 
-      helpTurnDegreeFront.innerHTML = "Please choose the value between 0 and 90 degrees"
+      helpTurnDegreeFront.innerHTML = "Please choose the value between 0 and 90 degrees";
       displayErrorValidation(inputTurnDegreeFront, helpTurnDegreeFront);
       return(false);
     

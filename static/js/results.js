@@ -20,29 +20,29 @@ console.log(allFormData);
 
 // returns values in a form of string
 
-var y = (allFormData["width-back-axis"]) / 2
+var y = (allFormData["width-back-axis"]) / 2;
 // Development use
 // var y = (allFormData["width-back-axis"]) 
-var h = (allFormData["width-front-axis"]) / 2
+var h = (allFormData["width-front-axis"]) / 2;
 // Development use
 // var h = (allFormData["width-front-axis"])
-var g = allFormData["between-front-and-back-axis"]
-var alpha = allFormData["turn-degree-front"]
-var x = allFormData["back-axis-to-footrest"]
+var g = allFormData["between-front-and-back-axis"];
+var alpha = allFormData["turn-degree-front"];
+var x = allFormData["back-axis-to-footrest"];
 
-y = parseFloat(y)
-h = parseFloat(h)
-g = parseFloat(g)
-alpha = parseFloat(alpha)
-x = parseFloat(x)
+y = parseFloat(y);
+h = parseFloat(h);
+g = parseFloat(g);
+alpha = parseFloat(alpha);
+x = parseFloat(x);
 
 // formula to get total diameter in Metric
-let TD = 2 * (Math.sqrt((y + h + ( g / (Math.tan(alpha)) ))**2  + x**2))
+let TD = 2 * (Math.sqrt((y + h + ( g / (Math.tan(alpha)) ))**2  + x**2));
 
 // Half of the thickness of the back wheel in Metric
-let halfWheelThickness = 3.81
+let halfWheelThickness = 3.81;
 // 6 inches, converted into cm for side padding in Metric
-let comfortPadding = 18.288
+let comfortPadding = 18.288;
 // Finds minimum width of hallway in Metric
 let minHallway = y + TD/2 + halfWheelThickness + comfortPadding;
 
@@ -51,12 +51,12 @@ let meterToFeet = 3.281;
 let TDUS = (TD / 100) * 3.281;
 
 // Half of the thickness of the back wheel in Imperial
-let halfWheelThicknessUS = (3.81 / 100) * meterToFeet
+let halfWheelThicknessUS = (3.81 / 100) * meterToFeet;
 // 6 inches, converted into cm for side padding in Imperial
-let comfortPaddingUS = (18.288 / 100) * meterToFeet
+let comfortPaddingUS = (18.288 / 100) * meterToFeet;
 // Finds minimum width of hallway in Imperial
 let minHallwayUS = (y / 100) * meterToFeet + TDUS/2 + halfWheelThicknessUS + comfortPaddingUS;
-let minDoorFrame = (((y / 100) * meterToFeet ) * 2 + halfWheelThicknessUS * 2 + comfortPaddingUS)
+let minDoorFrame = (((y / 100) * meterToFeet ) * 2 + halfWheelThicknessUS * 2 + comfortPaddingUS);
 
 // Outputs information: diameter of turn circle, radius, minimum width of hallway, and minimum width door as Metric
 document.getElementById("diameter").textContent = TD.toFixed(1) + " cm";

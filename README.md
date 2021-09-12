@@ -33,7 +33,7 @@
 # Spinning Wheelchairs
 + Make sure your corridor is accessible! We offer a simple tool to help calculate accessibility for an electric powered wheelchair with rear wheel drive and direct steering. This tool will measure a comfortable distance needed for this type of wheel chair to make a turn from a doorway into a hallway at a constant angle. It will also tell a comfortable doorframe width for this type chair to pass through.
 
-<img src=""> 
+<img src="static/assets/readme/mock-up.png"> 
 
 Click [here](https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/) to live site.  
 
@@ -45,28 +45,52 @@ Click [here](https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/) to 
 
 1. Add my wheelchair's measures in centimeters;
 2. Get the minimum corridor and door width that fits my wheelchair. 
+3. Get my results in in centimeters and imperial. 
+
++ As a site owner, I want…
+
+1.	the information to be clear and informative.
+2.	the website be easy to navigate.
+3.	the information could help to design accessible wheelchair corridors.
+
+### Wireframes 
+
+Wireframes created with Balsamiq. The project was developed from initial wireframes and some modifications were made during the development process to assure better usability. 
+
+[Wireframes](static/assets/readme/wireframes/index-page.png)
 
 ## Existing Features 
 
 ### Navbar 
 
-+ Fixed Navbar with Home Contact Us to allow the user easy access to all pages. 
++ Fixed Navbar with Home and Contact Us buttons to allow the user easy access to all pages. 
 + Colapsed navbar on smaller devices to wrap in all options and assure better navbar design.
 
 ### Home page 
 
++ Jumbotron to catch user's attention for the app main goal. 
+
+<img style="width:720px" src="static/assets/readme/screenshots/jumbotron-home.png" > 
+
 + Shortly app instruction to assure that user can use it without doubts and easily. 
+
+<img src="static/assets/readme/screenshots/explanation-home.png"> 
 
 + Form to allow user to add their wheelchair measures. 
 
+<img src="static/assets/readme/screenshots/form-home.png"> 
 
 ### Results Page 
 
-+
++ 
+
+<img style="width:720px" src="static/assets/readme/screenshots/results.png"> 
 
 ### Contact Page
 
-+ Contact of all project collaboratos (LinkedIn and GitHub).
++ Contact of all project collaborators (LinkedIn and GitHub).
+
+<img style="width:720px" src="static/assets/readme/screenshots/contact-page.png"> 
 
 ## Future Features 
 
@@ -89,8 +113,7 @@ Click [here](https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/) to 
     Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 + GitHub:
     GitHub is used to store the projects code after being pushed from Git.
-+ Google Fonts:
-    Google fonts used to add fonts for aesthetic and UX purposes.
+
 
 # Code Validation
 
@@ -99,24 +122,23 @@ Click [here](https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/) to 
 + HTML
 
   Passing the HTML from all templates and base into the W3C Markup Validator no errors or warnings have been found [W3C validator](https://validator.w3.org/).
-  
-  <a href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!" />
-    </a>
+
+HTML validation results can be viewed on links:
+
+| Pages  |  
+| ------------------- | 
+|  [Index](static/assets/readme/validation/index-validation.png) |  
+|  [Results](static/assets/readme/validation/results-validation.png)|
+|  [Contact](static/assets/readme/validation/contact-validation.png) |
 
 + CSS
 
 No errors were found when passing through the official [W3C validator](https://jigsaw.w3.org/css-validator/). 
-
-CSS validation results can be viewed [here]()
-
+        
+[Css](static/assets/readme/validation/css-validation.png)
 + JavaScript
 
-I have tested both javascript files with the jshint and no error were been found. 
-
-Reports can be found on links:
+Javascript files was tested with the jshint and no error were been found. 
 
 ## Project Bugs and Solutions:
 
@@ -131,7 +153,7 @@ Reports can be found on links:
   - From the source section drop-down menu, select the Master Branch;
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found [here](https://github.com/Richardaeld/Hackathaon-trust-in-soda-team-2).
+The live link can be found [here](https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/).
 
 ### Forking the GitHub Repository:
 
