@@ -94,6 +94,13 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
 
 ## Future Features 
 
+1. Add drop down box containing different wheelchair brands and types that would fill in the form with all necesary data for the known popular wheelchairs
+2. Add drop down box to enable different calculations for wheelchairs with different turn - front wheels turning or rear wheels turning or differential steering
+3. Analysing door opening - back - front ways or sliding door, which would be most suitable
+4. Calculations for coridor width enabling 3 point turn
+5. Enable user to choose input imperial or metric measures
+6. Analysing small spaces - like bathrooms to make sure there is enough space for wheelchair and opening the door. 
+
 ## Technologies Used
 
 ### Languages Used
