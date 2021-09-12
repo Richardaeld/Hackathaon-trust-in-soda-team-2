@@ -31,7 +31,7 @@
 + [Acknowledgements](#acknowledgements)
 
 # Spinning Wheelchairs
-+ Make sure your corridor is accessible! We offer a simple tool to help calculate accessibility for an electric powered wheelchair with rear wheel drive and direct steering. This tool will measure a comfortable distance needed for this type of wheel chair to make a turn from a doorway into a hallway at a constant angle. It will also tell a comfortable doorframe width for this type chair to pass through.
++ Make sure your corridor is accessible! We offer a simple tool to help calculate accessibility for an electric-powered wheelchair with rear-wheel drive and direct steering. This tool will measure the comfortable distance needed for this type of wheelchair to make a turn from a doorway into a hallway at a constant angle. It will also tell a comfortable doorframe width for this type of chair to pass through.
 
 <img src="static/assets/readme/mock-up.png"> 
 
@@ -43,15 +43,16 @@ Click [here](https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/) to 
 
 + As a user, I would like to be able to …
 
-1. Add my wheelchair's measures in centimeters;
-2. Get the minimum corridor and door width that fits my wheelchair. 
-3. Get my results in in centimeters and imperial. 
+1. Add my wheelchair's measures in centimetres;
+2. Get the minimum corridor and door width that fits my wheelchair; 
+3. Get my results in centimetres and imperial. 
 
 + As a site owner, I want…
 
-1.	the information to be clear and informative.
-2.	the website be easy to navigate.
-3.	the information could help to design accessible wheelchair corridors.
+1.  the information to be clear and informative;
+2.  the website be easy to navigate;
+3.  provide results in metric and imperial for the user;
+3.  the information could help to design accessible wheelchair corridors;
 
 ### Wireframes 
 
@@ -64,11 +65,11 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
 ### Navbar 
 
 + Fixed Navbar with Home and Contact Us buttons to allow the user easy access to all pages. 
-+ Colapsed navbar on smaller devices to wrap in all options and assure better navbar design.
++ Collapsed navbar on smaller devices to wrap in all options and assure better navbar design.
 
 ### Home page 
 
-+ Jumbotron to catch user's attention for the app main goal. 
++ Jumbotron to catch the user's attention for the app main goal. 
 
 <img style="width:720px" src="static/assets/readme/screenshots/jumbotron-home.png" > 
 
@@ -76,13 +77,18 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
 
 <img src="static/assets/readme/screenshots/explanation-home.png"> 
 
-+ Form to allow user to add their wheelchair measures. 
++ Form to allow the user to add their wheelchair measures. 
 
 <img src="static/assets/readme/screenshots/form-home.png"> 
 
 ### Results Page 
 
-+ 
++ The results page provides a list of measures (in meters and imperial) accordingly to the user's wheelchair inputs. The list is described below:
+
+   + Minimum circle diameter required to do a 360-degree turn;
+   + Minimum distance required to do a 90-degree turn;
+   + Minimum comfortable width of a hallway to do a turn into from a doorway;
+   + Minimum comfortable width of a door frame to pass through.
 
 <img style="width:720px" src="static/assets/readme/screenshots/results.png"> 
 
@@ -115,11 +121,11 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
 + Balsamiq:
     Balsamiq was used to create the wireframes during the design process.
 + Bootstrap 5:
-    Bootstrap was used to add style on website.
+    Bootstrap was used to add style to the website.
 + Git
     Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 + GitHub:
-    GitHub is used to store the projects code after being pushed from Git.
+    GitHub is used to store the project's code after being pushed from Git.
 
 
 # Code Validation
@@ -145,7 +151,7 @@ No errors were found when passing through the official [W3C validator](https://j
 [Css](static/assets/readme/validation/css-validation.png)
 + JavaScript
 
-Javascript files was tested with the jshint and no error were been found. 
+Javascript files were tested with the jshint and no errors were been found. 
 
 ## Project Bugs and Solutions:
 
@@ -167,7 +173,7 @@ The live link can be found [here](https://richardaeld.github.io/Hackathaon-trust
 By forking the GitHub Repository you will be able to make a copy of the original repository on your own GitHub account allowing you to view and/or make changes without affecting the original repository by using the following steps:
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Richardaeld/Hackathaon-trust-in-soda-team-2)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+2. At the top of the Repository (not top of page) just above the "Settings" button on the menu, locate the "Fork" button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
