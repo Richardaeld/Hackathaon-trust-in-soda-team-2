@@ -47,6 +47,18 @@ Click [here](https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/) to 
 2. Get the minimum corridor and door width that fits my wheelchair. 
 3. Get my results in in centimeters and imperial. 
 
++ As a site owner, I want…
+
+1.	the information to be clear and informative.
+2.	the website be easy to navigate.
+3.	the information could help to design accessible wheelchair corridors.
+
+### Wireframes 
+
+Wireframes created with Balsamiq. The project was developed from initial wireframes and some modifications were made during the development process to assure better usability. 
+
+[Wireframes](static/assets/readme/wireframes/index-page.png)
+
 ## Existing Features 
 
 ### Navbar 
@@ -70,11 +82,15 @@ Click [here](https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/) to 
 
 ### Results Page 
 
-+
++ 
+
+<img style="width:720px" src="static/assets/readme/screenshots/results.png"> 
 
 ### Contact Page
 
 + Contact of all project collaborators (LinkedIn and GitHub).
+
+<img style="width:720px" src="static/assets/readme/screenshots/contact-page.png"> 
 
 ## Future Features 
 
@@ -118,13 +134,8 @@ HTML validation results can be viewed on links:
 + CSS
 
 No errors were found when passing through the official [W3C validator](https://jigsaw.w3.org/css-validator/). 
-
-<a href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!" />
-    </a>
-
+        
+[Css](static/assets/readme/validation/css-validation.png)
 + JavaScript
 
 Javascript files was tested with the jshint and no error were been found. 
@@ -142,7 +153,7 @@ Javascript files was tested with the jshint and no error were been found.
   - From the source section drop-down menu, select the Master Branch;
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found [here](https://github.com/Richardaeld/Hackathaon-trust-in-soda-team-2).
+The live link can be found [here](https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/).
 
 ### Forking the GitHub Repository:
 
