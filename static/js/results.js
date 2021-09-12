@@ -22,17 +22,35 @@ console.log(allFormData);
 
 // returns values in a form of string
 
-var y = (allFormData["width-back-axis"]) / 2
-var h = (allFormData["width-front-axis"]) / 2
+// var y = (allFormData["width-back-axis"]) / 2
+var y = (allFormData["width-back-axis"])
+// var h = (allFormData["width-front-axis"]) / 2
+var h = (allFormData["width-front-axis"])
 var g = allFormData["between-front-and-back-axis"]
 var alpha = allFormData["turn-degree-front"]
 var x = allFormData["back-axis-to-footrest"]
 
-// console log - can be removed when you finished
+y = parseFloat(y)
+h = parseFloat(h)
+g = parseFloat(g)
+alpha = parseFloat(alpha)
+x = parseFloat(x)
 
-console.log(`y - width-back-axis = ${y}`)
-console.log(`h - width-front-axis = ${h}`)
-console.log(`g - distance between front and back axis = ${g}`)
-console.log(`alpha - angle of the front wheel that is spinning ${alpha}`)
-console.log(`x - distance between back wheel axis and the tip of the foot rest ${x}`)
+// formula to get total diameter
+let TD = 2 * (Math.sqrt((y + h + ( g / (Math.tan(alpha)) ))**2  + x**2))
+// formula to get 3 point turn size
+// let ThreePTurn = (g / Math.tan(alpha)) + h;
 
+// Half of the thickness of the back wheel
+let halfWheelThickness = 3.81
+// 6 inches, converted into cm for side padding
+let comfortPadding = 18.288
+// Finds minimum width of hallway
+let minHallway = y + TD/2 + halfWheelThickness + comfortPadding;
+
+// Outputs information: diameter of turn circle, radius, minimum width of hallway, minimum width door, and three point turn
+document.getElementById("diameter").textContent = TD.toFixed(1) + " cm";
+document.getElementById("radius").textContent = (TD/2).toFixed(1) + " cm";
+document.getElementById("hallway").textContent = minHallway.toFixed(1) + " cm";
+document.getElementById("doorway").textContent = (y*2 + halfWheelThickness*2 + comfortPadding).toFixed(1) + " cm";
+// document.getElementById("ThreePointTurn").textContent = ThreePTurn.toFixed(1) + "cm";
