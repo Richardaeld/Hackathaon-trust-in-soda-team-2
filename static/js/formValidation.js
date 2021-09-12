@@ -58,7 +58,7 @@
   
 //functions to display result of the validation of each particular field, returns true or highlights the input field red
 
-function validateInputField(inputField, helpDiv, ) {
+function validateInputField(inputField, helpDiv) {
 
     if (inputField.value == 0) {
   
@@ -79,8 +79,13 @@ function validateInputField(inputField, helpDiv, ) {
       displayErrorValidation(inputField, helpDiv);
       return(false);
 
-    ///////////////////////////////add to test if the input is not a number
-    ////////////////////////////////isNaN(123) //false
+
+    } else if (isNaN(inputField)) {
+      helpDiv.innerHTML = "Please put numbers in this field";
+      displayErrorValidation(inputField, helpDiv);
+      return(false);
+    
+    
   
     } else {
       
