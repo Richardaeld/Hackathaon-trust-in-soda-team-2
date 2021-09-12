@@ -1,5 +1,23 @@
 // field validation copied from p2 project - Joanna Gorska
 
+
+// variables needed for all validation results function and for validation on input
+
+var inputWidthBackAxis = document.getElementById("input-width-back-axis")
+var helpWidthBackAxis = document.getElementById("help-width-back-axis")
+
+var inputWidthFrontAxis = document.getElementById("input-width-front-axis")
+var helpWidthFrontAxis = document.getElementById("help-width-front-axis")
+
+var inputBetweenFrontAndBackAxis = document.getElementById("input-between-front-and-back-axis")
+var helpBetweenFrontAndBackAxis = document.getElementById("help-between-front-and-back-axis")
+
+var inputBackAxisToFootrest = document.getElementById("input-back-axis-to-footrest")
+var helpBackAxisToFootrest = document.getElementById("help-back-axis-to-footrest")
+
+var inputTurnDegreeFront = document.getElementById("input-turn-degree-front")
+var helpTurnDegreeFront = document.getElementById("help-turn-degree-front")
+
 /**
  * Function to add class
  */
@@ -74,7 +92,7 @@ function containsLetters(inputField) {
 function validateInputField(inputField, helpDiv) {
 
     if (containsLetters(inputField)) {
-      
+
       helpDiv.innerHTML = "Please put numbers in this field";
       displayErrorValidation(inputField, helpDiv);
       return(false);
@@ -98,9 +116,13 @@ function validateInputField(inputField, helpDiv) {
       helpDiv.innerHTML = "This field is required";
       displayErrorValidation(inputField, helpDiv);
       return(false);
+
+    } else if (parseInt(inputTurnDegreeFront.value) > 90) {
+
+      helpTurnDegreeFront.innerHTML = "Please choose the value between 0 and 90 degrees"
+      displayErrorValidation(inputTurnDegreeFront, helpTurnDegreeFront);
+      return(false);
     
-    
-  
     } else {
       
   
@@ -111,24 +133,6 @@ function validateInputField(inputField, helpDiv) {
     
   }
 
-
-
-// variables needed for all validation results function and for validation on input
-
-var inputWidthBackAxis = document.getElementById("input-width-back-axis")
-var helpWidthBackAxis = document.getElementById("help-width-back-axis")
-
-var inputWidthFrontAxis = document.getElementById("input-width-front-axis")
-var helpWidthFrontAxis = document.getElementById("help-width-front-axis")
-
-var inputBetweenFrontAndBackAxis = document.getElementById("input-between-front-and-back-axis")
-var helpBetweenFrontAndBackAxis = document.getElementById("help-between-front-and-back-axis")
-
-var inputBackAxisToFootrest = document.getElementById("input-back-axis-to-footrest")
-var helpBackAxisToFootrest = document.getElementById("help-back-axis-to-footrest")
-
-var inputTurnDegreeFront = document.getElementById("input-turn-degree-front")
-var helpTurnDegreeFront = document.getElementById("help-turn-degree-front")
 
 /**
  * Function to check if each validation result, for each input field is false
