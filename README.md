@@ -187,14 +187,12 @@ $ git clone https://github.com/Richardaeld/Hackathaon-trust-in-soda-team-2
 7. Press Enter. Your local clone will be created.
 
 ## Credits 
-
+ 
 ### Content
 
-
+All wheelchair information was made based on [wheelchairntwork](https://wheelchairnetwork.org/kb/dim-mass-space/).
 
 ### Media
 
 All pictures and images used in this project are from [pexels](https://www.pexels.com/).
 
-
-### Acknowledgements
