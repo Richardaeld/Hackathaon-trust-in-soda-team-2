@@ -1,3 +1,16 @@
+.background-img-fixed {
+  background:
+  #f0f5fa
+  url('../images/wheelchair-jumbotron.png')
+  top/cover
+  no-repeat
+  fixed;
+}
+
+.my-white-gradient {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.726), rgb(255, 255, 255));
+}
+
 body{
   margin-bottom: 30px;
  }
