@@ -65,7 +65,7 @@ document.getElementById("hallway").textContent = minHallway.toFixed(1) + " cm";
 document.getElementById("doorway").textContent = (y*2 + halfWheelThickness * 2 + comfortPadding).toFixed(1) + " cm";
 
 // Outputs information: diameter of turn circle, radius, minimum width of hallway, and minimum width door as Imperial
-document.getElementById("diameterUS").textContent = Math.floor(TDUS) + " ft " + (((TDUS.toFixed(1)) * 12) % 12 ).toFixed(1) + " in";
-document.getElementById("radiusUS").textContent = Math.floor(TDUS/2) + " ft " + ((((TDUS/2).toFixed(1)) * 12 ) % 12 ).toFixed(1) + " in";
-document.getElementById("hallwayUS").textContent = Math.floor(minHallwayUS) + " ft  " + (((minHallwayUS.toFixed(1)) * 12) % 12).toFixed(1) + " in";
-document.getElementById("doorwayUS").textContent = Math.floor(minDoorFrame) + " ft " + (((minDoorFrame.toFixed(1)) * 12) % 12).toFixed(1) + " in";
+document.getElementById("diameterUS").textContent = Math.floor(TDUS) + " ft " + (((TDUS.toFixed(1)) * 12) % 12 ).toFixed(1) + " in.";
+document.getElementById("radiusUS").textContent = Math.floor(TDUS/2) + " ft " + ((((TDUS/2).toFixed(1)) * 12 ) % 12 ).toFixed(1) + " in.";
+document.getElementById("hallwayUS").textContent = Math.floor(minHallwayUS) + " ft  " + (((minHallwayUS.toFixed(1)) * 12) % 12).toFixed(1) + " in.";
+document.getElementById("doorwayUS").textContent = Math.floor(minDoorFrame) + " ft " + (((minDoorFrame.toFixed(1)) * 12) % 12).toFixed(1) + " in.";

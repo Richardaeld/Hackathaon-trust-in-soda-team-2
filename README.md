@@ -3,6 +3,7 @@
 
 [UX](#ux)
 + [User Stories](#user-stories)
++ [Wireframes](#wireframes)
 
 [Existing Features](#existing-features)
 + [Navbar](#navbar)
@@ -14,7 +15,7 @@
 
 [Technologies Used](#technologies-used)
 + [Languages Used](#languages-used)
-+ [Frameworks, Libraries & Programs Used](#frameworks,-libraries-&-programs-used)
++ [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
 
 [Code Validation](#code-validation)
 + [Automated Tests](#automated-tests)
@@ -22,13 +23,27 @@
 [Project Bugs and Solutions](#project-bugs-and-solutions)
 
 [Deployment](#deployment)
-+ [Forking the GitHub Respository](#forking-the-github-respository)
-+ [Making a Local Clone](#making-a-locol-clone)
++ [Forking the GitHub Respository](#forking-the-github-repository)
++ [Making a Local Clone](#making-a-local-clone)
+
+[Math](#math)
++ [Wheelchair types](#wheelchair-types)
++ [Formulas](#formulas)
+  + [Finding Total Turning Diameter for BWDDS](#finding-total-turning-diameter-for-bwdds)
+  + [Variables](#variables)
+  + [Formula](#formaula)
++ [Finding Hallway Width](#finding-hallway-width)
+  + [Assumptions](#assumptions)
+  + [Variables](#variables)
+  + [Formula](#formula)
++ [Finding Doorway Width](#finding-doorway-width)
+  + [Assumptions](#assumptions)
+  + [Variables](#variables)
+  + [Formula](#formaula)
 
 [Credits](#credits)
 + [Content](#content)
 + [Media](#media)
-+ [Acknowledgements](#acknowledgements)
 
 # Spinning Wheelchairs
 + Make sure your corridor is accessible! We offer a simple tool to help calculate accessibility for an electric-powered wheelchair with rear-wheel drive and direct steering. This tool will measure the comfortable distance needed for this type of wheelchair to make a turn from a doorway into a hallway at a constant angle. It will also tell a comfortable doorframe width for this type of chair to pass through.
@@ -116,7 +131,7 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
    + JQuery
    + JavaScript
 
- ### Frameworks, Libraries & Programs Used
+ ### Frameworks Libraries and Programs Used
 
 + Balsamiq:
     Balsamiq was used to create the wireframes during the design process.
@@ -128,7 +143,7 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
     GitHub is used to store the project's code after being pushed from Git.
 
 
-# Code Validation
+## Code Validation
 
 ### Automated tests
 
@@ -168,7 +183,7 @@ Javascript files were tested with the jshint and no errors were been found.
 
 The live link can be found [here](https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/).
 
-### Forking the GitHub Repository:
+### Forking the GitHub Repository
 
 By forking the GitHub Repository you will be able to make a copy of the original repository on your own GitHub account allowing you to view and/or make changes without affecting the original repository by using the following steps:
 
@@ -191,11 +206,67 @@ $ git clone https://github.com/Richardaeld/Hackathaon-trust-in-soda-team-2
 
 7. Press Enter. Your local clone will be created.
 
+## Math
+### Wheelchair types
+The scope of this project was limited to a single type of wheelchair. This wheelchair is an electrically powered front wheel driven chair with direct steering. This was choosen because of its perceived popularity in the market. The formulas used in this project were found at the [Working Area of Wheelchairs.](https://www.udeworld.com/spaceworkshop2003/Papers/WEB%20-%20Working%20Area%20of%20%20Wheelchairs%20(Ziegler).htm)
+
+### Formulas
+#### Finding Total Turning Diameter for BWDDS
+This method is used to find the total turning diameter for an electrically powered back wheel driven wheelchair with direct steering.
+
+##### Variables
++ y = Width between the chair's center of back axis and a back wheel.
++ h = Width between the chair's center of back axis and front wheel.
++ g = Width between front and back axis.
++ $\alpha$ = Angle of front wheel's turn.
++ x = Width between front most part of chair (tip of foot rest) to center of back axis.
+
+##### Formaula
+TD = 2 * $\sqrt{y + h + (g/sin(\alpha))^2 + x^2}$
+
+#### Finding Hallway Width
+##### Assumptions
++ The Wheelchair will start its turn in the center of a door way.
++ The ideal turn angle is instantly achieved and does not change.
++ Wheelchair will be able to make a single turn into hallway without having to backup.
++ The thickness of a back wheel of a BWDDS (back wheel driven wheelchair with direct steering) wheelchair is 3 inches.
++ A comfortable area of 'breathing space' is roughly 3.5 inch radius around someone.
++ An ideal hallway width is y + TD/2 + halfWheelThickness + comfortPadding.
+  + This completes a 1/4 of the turn diameters circle.
+  + Adds half of the back axis, half of a back wheel and roughly 3.5 inches as padding to the farside of the wheelchair.
+
+##### Variables
++ y = Width between the chair's center of back axis and a back wheel.
++ h = Width between the chair's center of back axis and front wheel.
++ g = Width between front and back axis.
++ $\alpha$ = Angle of front wheel's turn.
++ x = Width between front most part of chair (tip of foot rest) to center of back axis.
++ TD = 2 * $\sqrt{y + h + (g/sin(\alpha))^2 + x^2}$
++ halfWheelThickness = 3.81cm
++ comfortPadding = 18.288cm
+
+##### Formula
+minHallway = y + TD/2 + halfWheelThickness + comfortPadding
+
+#### Finding Doorway Width
+##### Assumptions
++ The thickness of a back wheel of a BWDDS (back wheel driven wheelchair with direct steering) wheelchair is 3 inches.
++ A comfortable area of 'breathing space' is roughly 3.5 inch radius around someone.
+
+##### Variables
++ y = Width between the chair's center of back axis and a back wheel.
++ halfWheelThickness = 3.81cm
++ comfortPadding = 18.288cm
+
+##### Formula
+ minDoorFrame = y * 2 + halfWheelThickness * 2 + comfortPadding
+
 ## Credits 
  
 ### Content
 
 All wheelchair information was made based on [wheelchairntwork](https://wheelchairnetwork.org/kb/dim-mass-space/).
+All wheelchair math was made based on [Working Area of Wheelchairs](https://www.udeworld.com/spaceworkshop2003/Papers/WEB%20-%20Working%20Area%20of%20%20Wheelchairs%20(Ziegler).htm)
 
 ### Media
 
