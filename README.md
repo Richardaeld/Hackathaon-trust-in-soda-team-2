@@ -207,11 +207,11 @@ $ git clone https://github.com/Richardaeld/Hackathaon-trust-in-soda-team-2
 
 ## Math
 ### Wheelchair types
-The scope of this project was limited to a single type of wheelchair. This wheelchair is an electrically powered front wheel driven chair with direct steering. This was choosen because of its perceived popularity in the market. The formulas used in this project were found at the [Working Area of Wheelchairs.](https://www.udeworld.com/spaceworkshop2003/Papers/WEB%20-%20Working%20Area%20of%20%20Wheelchairs%20(Ziegler).htm)
+The scope of this project was limited to a single type of wheelchair. This wheelchair is an electrically powered, back wheel driven chair with direct steering. This was choosen because of its perceived popularity in the market. The formulas used in this project were found at the [Working Area of Wheelchairs.](https://www.udeworld.com/spaceworkshop2003/Papers/WEB%20-%20Working%20Area%20of%20%20Wheelchairs%20(Ziegler).htm)
 
 ### Formulas
 #### Finding Total Turning Diameter for BWDDS
-This method is used to find the total turning diameter for an electrically powered back wheel driven wheelchair with direct steering.
+This method is used to find the total turning diameter for an electrically powered, back wheel driven wheelchair with direct steering.
 
 ##### Variables
 + y = Width between the chair's center of back axis and a back wheel.
