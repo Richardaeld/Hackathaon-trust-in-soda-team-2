@@ -128,7 +128,6 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
 
    + HTML5
    + CSS3
-   + JQuery
    + JavaScript
 
  ### Frameworks Libraries and Programs Used
