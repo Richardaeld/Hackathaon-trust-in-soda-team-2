@@ -1,5 +1,13 @@
+# Spinning Wheelchairs
++ Make sure your corridor is accessible! We offer a simple tool to help calculate accessibility for an electric-powered wheelchair with rear-wheel drive and direct steering. This tool will measure the comfortable distance needed for this type of wheelchair to make a turn from a doorway into a hallway at a constant angle. It will also tell a comfortable doorframe width for this type of chair to pass through.
+
+<img src="static/assets/readme/mock-up.png"> 
+
+Click [here](https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/) to live site.  
+
+
 # Contents
-[Spinning Wheel](#spinning-wheelchairs)
+[Spinning Wheelchairs](#spinning-wheelchairs)
 
 [UX](#ux)
 + [User Stories](#user-stories)
@@ -44,13 +52,6 @@
 [Credits](#credits)
 + [Content](#content)
 + [Media](#media)
-
-# Spinning Wheelchairs
-+ Make sure your corridor is accessible! We offer a simple tool to help calculate accessibility for an electric-powered wheelchair with rear-wheel drive and direct steering. This tool will measure the comfortable distance needed for this type of wheelchair to make a turn from a doorway into a hallway at a constant angle. It will also tell a comfortable doorframe width for this type of chair to pass through.
-
-<img src="static/assets/readme/mock-up.png"> 
-
-Click [here](https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/) to live site.  
 
 ## UX
 
